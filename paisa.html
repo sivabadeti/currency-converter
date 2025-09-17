@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="paisa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/webp" href="currencyfavicon.webp">
+</head>
+<body>
+    <div class="heading">
+        <div class="nav">
+            <ul>
+                <li class="currency"><i class="fa-solid fa-coins"></i></li>
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Home</a></li>
+                <li>
+                <select>
+                    <option>Money transfer</option>
+               </select>
+                </li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About us</a></li>
+                <li class="register"><a href="#">Register</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Currency converter</h1>
+        <p><b>Check live foreign currency exchange rates</b></p>
+        </div>
+    </div>
+
+    <!-- from here the body part  -->
+<div class="wraper">
+<div class="body">
+        <div class="form">
+           <p class="entermoney"><b>Enter money :</b></p>
+           <input type="number" id="money" placeholder="Enter amount">
+        </div>
+
+    <!-- select container -->
+    <div class="select-container">
+        <!-- first select -->
+    <div class="select">
+        <p style="font-size: 16px;"><b>From</b></p>
+        <img  src="https://flagsapi.com/IN/flat/64.png"  class="fromflag"  alt="indian flag">
+        <select class="from"></select>
+    </div>
+    <div class="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+     <!-- second select -->
+    <div class="select">
+        <p style="font-size:16px;"><b>To</b></p>
+        <img src="https://flagsapi.com/US/flat/64.png" class="toflag" alt="us flag">
+        <select class="to"></select>
+    </div>
+    </div>
+
+    <p class="rate"><b></b></p>
+    <button class="convert"><b>Convert</b></button>
+</div>
+</div>
+
+<!-- this is the answer -->
+ <div class="resultmain">
+    <div class="result">USD is:</div>
+ </div>
+
+<!-- this is from tail -->
+    <div class="tail">
+        <ul>
+            <li>Terms and conditions</li>
+             <li>Contact us</li>
+             <li>Privacy notice</li>
+        </ul>
+    </div>
+
+    <script src="paisa.js"></script>
+</body>
+</html>
